@@ -9,7 +9,7 @@ Should be available at [GitHub Pages](https://dmitrykulakovfrontend.github.io/Ti
 
 
 
-This project was made during pair coding with Abdul Shabbir ([@abdulshabbirdev](https://twitter.com/abdulshabbirdev)). Was a big pleasure to code with him and figuring out how to complete it!
+This project was made during pair coding with Abdul Shabbir ([@abdulshabbirdev](https://twitter.com/abdulshabbirdev)). Our goal was to make tic-tac-toe but in Object-oriented programming. Was a big pleasure to code with him and figuring out how to complete it!
 
 ![](opera_06-04-2022.gif)
 
