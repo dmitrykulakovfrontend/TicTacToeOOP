@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#game-condition {
+  height: 70px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.gray {
+  color: gray;
+}
+
+.white {
+  color: white;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  height: 450px;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 650px) {
+  /*  this will run for screens <= 650px */
+  .board {
+    width: 300px;
+    height: 300px;
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+  }
+  body .flex-col {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  body .flex-col:first-child {
+    padding-top: 30px;
+  }
+  .scoreboard {
+    flex-direction: column;
+  }
+}
+
+.border-bottom {
+  border-bottom: 5px solid white;
+}
+
+.border-right {
+  border-right: 5px solid white;
+}
+
+.border-left {
+  border-left: 5px solid white;
+}
+
+.border-top {
+  border-top: 5px solid #ffffff;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  font-size: 1.2rem;
+  padding: 50px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.animateScaling {
+  animation-name: scale;
+  animation-duration: 50ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forward;
+}
+
+/* Animations */
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

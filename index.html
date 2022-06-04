@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="game-condition"></h1>
+    <div class="board">
+      <div data-row="0" data-col="0" class="cell border-bottom border-right"></div>
+      <div data-row="0" data-col="1" class="cell border-bottom border-right"></div>
+      <div data-row="0" data-col="2" class="cell border-bottom"></div>
+      <div data-row="1" data-col="0" class="cell border-bottom border-right"></div>
+      <div data-row="1" data-col="1" class="cell border-bottom border-right"></div>
+      <div data-row="1" data-col="2" class="cell border-bottom"></div>
+      <div data-row="2" data-col="0" class="cell border-right"></div>
+      <div data-row="2" data-col="1" class="cell border-right"></div>
+      <div data-row="2" data-col="2" class="cell"></div>
+    </div>
+    <div class="scoreboard">
+      <div class="flex-col">
+        <span>Player 1 (O) Wins</span>
+        <span id="player-o-wins">0</span>
+      </div>
+      <div class="tie flex-col">
+          <span>Tie Rounds</span>
+          <span id="ties">0</span>
+      </div>
+      <div class="flex-col">
+          <span>Player 2 (X) Wins</span>
+          <span id="player-x-wins">0</span>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
